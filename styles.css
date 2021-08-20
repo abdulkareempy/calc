@@ -6,6 +6,7 @@ body{
     display:flex;
     justify-content: center;
     align-items:center;
+    background:#3B4664;
 }
 .container-wrapper{
     padding:50px;
@@ -74,8 +75,13 @@ body{
     grid-template-rows: repeat(5,34px);
     grid-gap: 8px;
     padding:8px;
-
+    align-content: center;
 }
+
+.keypad button:hover{
+    background-color: rgba(255,255,255, 0.6);
+}
+
 .keypad *{
     border-radius:8px;
     background: rgb(234, 227, 219);
@@ -90,11 +96,22 @@ body{
     color:#fff;
     font-size:10px;
 }
+
+.keypad .reset:hover{
+background-color: #2224aa;
+border:1px solid #fff;
+}
+
 .keypad .equals{
     grid-column: 3/-1;
     background:#d13f30;
     color:#fff;
 }
+.keypad .equals:hover{
+    background-color:#158a4a;
+    
+}
+
 .keypad .del{
     background:#647299;
     color:#fff;
